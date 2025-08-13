@@ -18,8 +18,8 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
-            $table->string('subject');
-            $table->text('message')->nullable();
+            $table->string('subject')->nullable();
+            $table->text('message');
             $table->timestamps();
         });
     }
