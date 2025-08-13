@@ -14,6 +14,5 @@ class ContactController extends Controller
 
     function contactSubmit(ContactStoreRequest $request) {
         $contact = new Contact();
-        $contact = new Contact();
     }
 }

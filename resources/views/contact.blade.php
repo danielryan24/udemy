@@ -29,7 +29,7 @@
                             </div>
                             <div class="mb-3">
                                 <label for="" class="form-label">Message</label>
-                                <textarea name="" class="form-control" name="message"></textarea>
+                                <textarea class="form-control" id="" name="message"></textarea>
                             </div>
 
 

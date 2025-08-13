@@ -23,7 +23,7 @@ class ContactStoreRequest extends FormRequest
             'name' => ['required', 'max:20','min:2'],
             'email' => ['required','email'],
             'subject' => ['nullable', 'max:255'],
-            'message' => ['nullable', 'max:5000']
+            'message' => ['required', 'max:500']
         ];
     }
     function messages()
@@ -32,7 +32,8 @@ class ContactStoreRequest extends FormRequest
             'name.required' => 'Please fill the name field',
             'name.max' => 'max length of name have to be 20',
             'name.min' => 'min length of name have to be 2',
-            'email.required' => 'Please fill the email field'
+            'email.required' => 'Please fill the email field',
+            'message.required' => 'Please fill the message field'
         ];
     }
 }
